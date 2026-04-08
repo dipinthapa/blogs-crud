@@ -1,10 +1,13 @@
 import React from 'react'
+import CreateBlog from './components/createBlog/CreateBlog'
+import BlogCard from './components/blogCard/BlogCard'
 
 const App = () => {
   return (
-    <div>
-      <p className="text-3xl font-bold text-blue-500">Tailwind is working</p>
-    </div>
+    <>
+     <CreateBlog />
+     <BlogCard /> 
+    </>
   )
 }
 
