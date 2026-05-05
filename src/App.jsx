@@ -1,14 +1,12 @@
-import React from 'react'
-import CreateBlog from './components/createBlog/CreateBlog'
-import BlogCard from './components/blogCard/BlogCard'
+import BlogPage from "./pages/BlogPage";
+import { BlogProvider } from "./context/BlogContext";
 
-const App = () => {
+function App() {
   return (
-    <>
-     <CreateBlog />
-     <BlogCard /> 
-    </>
-  )
+    <BlogProvider>
+      <BlogPage />
+    </BlogProvider>
+  );
 }
 
-export default App
+export default App;
