@@ -7,7 +7,7 @@ const BlogCard = ({ blog, onDelete, onEdit }) => {
     <>
       <div className='lg:max-w-[900px] mx-auto'>
 
-        <div className="bg-white p-5 m-5 rounded-xl shadow-sm border">
+        <div className="bg-white p-5 m-5 rounded-xl shadow-sm">
           <h3 className="text-lg font-bold">{blog.title || "No Title"}</h3>
           <span className="text-xs bg-gray-100 px-2 py-1 rounded">
             {blog.category || "General"}
