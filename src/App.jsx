@@ -1,11 +1,12 @@
-import React from 'react'
+import BlogPage from "./pages/BlogPage";
+import { BlogProvider } from "./context/BlogContext";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <p className="text-3xl font-bold text-blue-500">Tailwind is working</p>
-    </div>
-  )
+    <BlogProvider>
+      <BlogPage />
+    </BlogProvider>
+  );
 }
 
-export default App
+export default App;
